@@ -38,7 +38,8 @@ include __DIR__ . '/../includes/header.php'; ?>
         <div class="field"><label>Tutor</label><select name="tutor_id" required>
                 <option value="">Selecione</option><?php foreach ($tutores as $t): ?>
                     <option value="<?= $t['id'] ?>" <?= $r['tutor_id'] == $t['id'] ? 'selected' : '' ?>>
-                        <?= htmlspecialchars($t['nome']) ?></option><?php endforeach; ?>
+                        <?= htmlspecialchars($t['nome']) ?>
+                    </option><?php endforeach; ?>
             </select></div>
         <div class="field"><label>Nome *</label><input name="nome" value="<?= htmlspecialchars($r['nome']) ?>" required>
         </div>
